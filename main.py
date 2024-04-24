@@ -160,7 +160,7 @@ def switch_setting(base_url):
     # change animation option
     switch_animation_setting(base_url)
 
-    driver.implicitly_wait(50)
+    time.sleep(30)
     # check frontend dark mode work or not
     check_frontend_dark_mode(base_url)
     
