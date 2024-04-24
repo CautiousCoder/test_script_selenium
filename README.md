@@ -1,5 +1,6 @@
 # WP Dark Mode Plugin test Script
 
+Note: My full project has another branch, please check this branch
 
 ## Must change some lines of code to run your machine
 
