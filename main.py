@@ -30,7 +30,7 @@ def login(base_url, uname, password):
     except Exception as e:
         print("Some error occur -", e)
     
-    time.sleep(10)
+    time.sleep(100)
     driver.close()
     driver.quit()
 
