@@ -82,6 +82,8 @@ def check_plugin_installed(base_url):
         driver.implicitly_wait(1)
         try:
             driver.find_element(By.LINK_TEXT, "Activate Plugin").click()
+            driver.get(f"{base_url}/wp-admin/index.php")
+            driver.implicitly_wait(3)
             enable_backend_dark_mode(base_url)
         except Exception as e:
             print("Could nod active plugin", e)
@@ -158,7 +160,7 @@ def switch_setting(base_url):
     # change animation option
     switch_animation_setting(base_url)
 
-    driver.implicitly_wait(3)
+    driver.implicitly_wait(50)
     # check frontend dark mode work or not
     check_frontend_dark_mode(base_url)
     
