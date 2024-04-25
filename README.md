@@ -2,6 +2,8 @@
 
 Note: My full project has another branch, please check this branch
 
+#### Note: Avoid any collision please remove inactive plugin
+
 ## Must change some lines of code to run your machine
 
 In main function declare three variables must be changed.
